@@ -1,24 +1,24 @@
 import { useEffect, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { API_OPTIONS } from "./constant";
-import { getPlaymovies } from "./moviesSlice";
+import { addPopularMovies} from "./moviesSlice";
 
-const useNowPlayingMovie = () => {
+const useNowPopularMovie = () => {
   const dispatch = useDispatch();
 
-  const fetchPlayMovies = useCallback(async () => { 
+  const getPopularMovies = useCallback(async () => { 
     const response = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?page=1",
+      "https://api.themoviedb.org/3/movie/popular?page=1",
       API_OPTIONS
     );
     const json = await response.json();
     console.log(json.results);
-    dispatch(getPlaymovies(json.results));
+    dispatch(addPopularMovies(json.results));
   }, [dispatch]); 
 
   useEffect(() => {
-    fetchPlayMovies();
-  }, [fetchPlayMovies]); 
+    getPopularMovies();
+  }, [getPopularMovies]); 
 };
 
-export default useNowPlayingMovie;
+export default useNowPopularMovie ;

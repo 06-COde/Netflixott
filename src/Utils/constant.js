@@ -9,3 +9,5 @@
      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZGQ2YTIyZGM2OWRkMDc0ZGMyYzQ3ODJlNDhiNzdkYiIsIm5iZiI6MTczOTc4MjgxNS45Mjk5OTk4LCJzdWIiOiI2N2IyZmE5ZjMxNzgzOGQyOTQ5ZmIzNzAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.OFFcCUdBoaOWkkTmB-rrABZP3sZ1uEQY-dsP1COhvZ4'
    }
  };
+
+ export const IMG_CDN  = "https://image.tmdb.org/t/p/w500";
