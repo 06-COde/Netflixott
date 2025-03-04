@@ -10,11 +10,11 @@ const movieSlice = createSlice({
     },
     reducers: {
         getPlaymovies: (state, action) => {
-            console.log("Updating movies in store:", action.payload); // ✅ Debugging log
+          //  console.log("Updating movies in store:", action.payload); // ✅ Debugging log
             state.nowPlayingMovies = action.payload;
         },
         addPopularMovies: (state, action) => {
-            console.log("Updating popular movies in store:", action.payload); // ✅ Debugging log
+          //  console.log("Updating popular movies in store:", action.payload); // ✅ Debugging log
             state.PopularMovies = action.payload; 
         },
          

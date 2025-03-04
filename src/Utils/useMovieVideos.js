@@ -13,7 +13,7 @@ const useMovieVideo = ({ movieId }) => {
                 API_OPTIONS
             );
             const json = await response.json();
-            console.log("Movie Videos:", json);
+           // console.log("Movie Videos:", json);
 
             if (!json.results) {
                 console.error("No results found in API response");
@@ -22,7 +22,7 @@ const useMovieVideo = ({ movieId }) => {
 
             const filterData = json.results.filter((video) => video.type === "Trailer");
             const trailer = filterData.length ? filterData[0] : json.results[0];
-            console.log("Selected Trailer:", trailer);
+           // console.log("Selected Trailer:", trailer);
             dispatch(addTrailerVideo(trailer));
         } catch (error) {
             console.error("Error fetching movie videos:", error);

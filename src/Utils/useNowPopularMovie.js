@@ -12,7 +12,7 @@ const useNowPopularMovie = () => {
       API_OPTIONS
     );
     const json = await response.json();
-    console.log(json.results);
+   // console.log(json.results);
     dispatch(addPopularMovies(json.results));
   }, [dispatch]); 
 

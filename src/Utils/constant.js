@@ -11,3 +11,13 @@
  };
 
  export const IMG_CDN  = "https://image.tmdb.org/t/p/w500";
+
+ export const SUPPORTED_LANGUAGES = [
+  {identifier : "en", name: "English"},
+  {identifier : "hindi", name: "Hindi"},
+  {identifier : "spanish", name: "Spanish"},
+  {identifier : "arabic", name : "Arabic"},
+ ];
+
+
+ export const openAiKey = "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";
